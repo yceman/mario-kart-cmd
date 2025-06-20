@@ -82,7 +82,7 @@
             </td>
             <td style="border: 1px solid black; text-align: center;">
                 <p>Koopa Troopa</p>
-                <img src="./docs/koopa-troopa_render.gif" alt="Mario Kart" width="60" height="60">
+                <img src="./docs/koopa-troopa_render2.gif" alt="Mario Kart" width="60" height="60">
             </td>
             <td style="border: 1px solid black; text-align: center;">
                 <p>Velocidade: 3</p>
