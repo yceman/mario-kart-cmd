@@ -99,6 +99,13 @@ async function playRaceEngine(character1, character2) {
     }
 
     if (block === "CONFRONTO") {
+      let confettiBombTrigger = Math.random();
+      if (confettiBombTrigger < 0.3) {
+        console.log("🎉 Bomba de confete! O PODER de um jogador será reduzido!");
+        let unlucky = Math.random() < 0.5 ? character1 : character2;
+        unlucky.PODER = Math.max(0, unlucky.PODER - 2);
+        console.log(`${unlucky.NOME} foi atingido! PODER reduzido em 2 pontos`);
+      }
       let powerResult1 = diceResult1 + character1.PODER;
       let powerResult2 = diceResult2 + character2.PODER;
 
@@ -132,11 +139,39 @@ async function playRaceEngine(character1, character2) {
         character1.PONTOS--;
       }
 
+      // Evento surpresa após o confronto
+      if (powerResult1 !== powerResult2) {
+        let itemChance = Math.random();
+        let alvo = powerResult1 > powerResult2 ? character2 : character1;
+
+        if (itemChance < 0.5) {
+          console.log("🐢 Casco surpresa! -1 ponto para " + alvo.NOME);
+          alvo.PONTOS = Math.max(0, alvo.PONTOS - 1);
+        } else {
+          console.log("💣 Bomba surpresa! -2 pontos para " + alvo.NOME);
+          alvo.PONTOS = Math.max(0, alvo.PONTOS - 2);
+        }
+      }
+
       console.log(
         powerResult2 === powerResult1
           ? "Confronto empatado! Nenhum ponto foi perdido"
           : ""
       );
+    }
+
+    if (powerResult1 > powerResult2) {
+      if(Math.random() < 0.5) { // 50% de chance
+        console.log(`${character1.NOME} ganhou um TURBO! 🚀 +1 ponto extra!`);
+        character1.PONTOS++;
+      }
+    }
+
+    if (powerResult2 > powerResult1) {
+      if(Math.random() < 0.5) { // 50% de chance
+        console.log(`${character1.NOME} ganhou um TURBO! 🚀 +1 ponto extra!`);
+        character1.PONTOS++;
+      }
     }
 
     // verificando o vencedor
