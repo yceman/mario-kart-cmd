@@ -1,12 +1,25 @@
 {
-  "name": "aula",
+  "name": "mario-kart-cmd",
   "version": "1.0.0",
-  "description": "",
+  "description": "Nodejs Mario Kart Game",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yceman/validator-card.git"
+  },
+  "keywords": [
+    Mario, 
+    Kart, 
+    Javascript, 
+    Nodejs
+  ],
+  "author": "Marcos Morais",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yceman/mario-kart-cmd/issues"
+  },
+  "homepage": "https://github.com/yceman/mario-kart-cmd#readme"
 }
