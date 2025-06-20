@@ -42,6 +42,15 @@
                 <p>Manobrabilidade: 4</p>
                 <p>Poder: 3</p>
             </td>
+            <td style="border: 1px solid black; text-align: center;">
+                <p>Toad</p>
+                <img src="./docs/yoshi.gif" alt="Mario Kart" width="60" height="60">
+            </td>
+            <td style="border: 1px solid black; text-align: center;">
+                <p>Velocidade: 2</p>
+                <p>Manobrabilidade: 4</p>
+                <p>Poder: 4</p>
+            </td>
         </tr>
         <tr>
             <td style="border: 1px solid black; text-align: center;">
@@ -70,6 +79,15 @@
                 <p>Velocidade: 2</p>
                 <p>Manobrabilidade: 2</p>
                 <p>Poder: 5</p>
+            </td>
+            <td style="border: 1px solid black; text-align: center;">
+                <p>Koopa Troopa</p>
+                <img src="./docs/dk.gif" alt="Mario Kart" width="60" height="60">
+            </td>
+            <td style="border: 1px solid black; text-align: center;">
+                <p>Velocidade: 3</p>
+                <p>Manobrabilidade: 3</p>
+                <p>Poder: 4</p>
             </td>
         </tr>
     </table>
